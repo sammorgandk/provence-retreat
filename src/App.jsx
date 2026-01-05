@@ -47,7 +47,7 @@ export default function RetreatWebsite() {
               </div>
               <div className="flex items-center gap-2">
                 <Users size={20} />
-                <span>Small Group</span>
+                <span>Small Groups</span>
               </div>
             </div>
           </div>
@@ -138,13 +138,13 @@ export default function RetreatWebsite() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-6 bg-white/60 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-serif text-amber-900 mb-8 text-center">Investment</h2>
+          <h2 className="text-5xl font-serif text-amber-900 mb-8 text-center">What's Included</h2>
           <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-10 border-2 border-amber-200 shadow-xl">
             <div className="text-center mb-8">
               <p className="text-2xl font-serif text-amber-900 mb-4">All-Inclusive Experience</p>
               <p className="text-amber-800 leading-relaxed max-w-2xl mx-auto">
-                Seven days and six nights of relaxation in France. Yoga, wine, connection, 
-                and networking with thoughtful individuals — all in a beautifully curated setting.
+                Seven days and six nights of relaxation in Provence. Find your joie de vivre with outdoor activities, French gastronomy, connection, 
+                and connecting with your peers — all in a beautifully curated setting.
               </p>
             </div>
             
@@ -158,11 +158,7 @@ export default function RetreatWebsite() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
-                    <span>All meals & beverages</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">✓</span>
-                    <span>Daily yoga sessions</span>
+                    <span>Meals, snacks, and beverages</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
@@ -240,25 +236,18 @@ export default function RetreatWebsite() {
                 {showForm ? 'Hide Form' : 'Show Interest Form'}
               </button>
             </div>
-            
             {showForm && (
-              <div className="mt-6 border-2 border-amber-200 rounded-xl p-4 bg-amber-50">
-                <p className="text-center text-amber-800 mb-4 font-serif text-lg">
-                  📝 Replace this section with your Google Form embed code
-                </p>
-                <div className="bg-white rounded-lg p-6 text-sm text-gray-600">
-                  <p className="mb-2"><strong>To embed your Google Form:</strong></p>
-                  <ol className="list-decimal ml-6 space-y-1">
-                    <li>Open your Google Form</li>
-                    <li>Click "Send" in the top right</li>
-                    <li>Click the "&lt;/&gt;" (embed) icon</li>
-                    <li>Copy the iframe code</li>
-                    <li>Replace this placeholder div with the iframe</li>
-                  </ol>
-                  <p className="mt-4 text-xs italic">
-                    Example: &lt;iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="800"&gt;&lt;/iframe&gt;
-                  </p>
-                </div>
+              <div className="mt-6 rounded-xl overflow-hidden shadow-lg">
+                <iframe 
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdXdCwSFbZDJMbnTE7avYUOlimM1U9xN-WbAOGhUx5Pq0rxYQ/viewform?embedded=true" 
+                  width="100%" 
+                  height="1388" 
+                  frameBorder="0" 
+                  marginHeight="0" 
+                  marginWidth="0"
+                >
+                  Loading…
+                </iframe>
               </div>
             )}
           </div>
